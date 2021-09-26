@@ -3,7 +3,7 @@ variable "environment" {
 }
 
 variable "main_vpc_id" {
-  default = "Main VPC ID"
+  description = "Main VPC ID"
 }
 
 variable "ssh_source_whitelist" {

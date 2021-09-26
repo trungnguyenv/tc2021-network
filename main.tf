@@ -23,5 +23,6 @@ module "security_group" {
   source = "./security_group"
 
   environment = var.environment
+  main_vpc_id = module.vpc.main_vpc_id
   ssh_source_whitelist = var.ssh_source_whitelist
 }
