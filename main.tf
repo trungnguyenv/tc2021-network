@@ -10,6 +10,12 @@ terraform {
 provider "aws" {
   profile = "default"
   region  = var.region
+
+  default_tags {
+    tags = {
+      Environment = var.environment
+    }
+  }
 }
 
 module "vpc" {
