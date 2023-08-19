@@ -1,5 +1,5 @@
 variable "environment" {
-  description = "Environment Name"
+  description = "Environment Name (dev|qa|uat|prod)"
 }
 
 variable "region" {
